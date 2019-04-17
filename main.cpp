@@ -4,9 +4,11 @@ using std::cout;
 using std::cin;
 using std::endl;
 
-
+// Algorithms for computing n-th element of Fibonacci sequence
 int recursion_fib_num(int element_ind);
 int dynamic_fib_num(int element_ind);
+// Algorithms for computing
+
 
 int main()
 {
@@ -41,10 +43,11 @@ int main()
 
 ////////////////////////////////////////////////////////////////////////////////////////
 // FIBONACCI SEQUENCE
+
 // recursive method:
 int recursion_fib_num(int element_ind)
 {
-    if (element_ind <=1)
+    if (element_ind ==0 || element_ind ==1)
         // 0 and 1 are known elements of fibonacci sequence
         return element_ind;
     else
@@ -70,5 +73,4 @@ int dynamic_fib_num(int element_ind)
 
     return fib_sequence[element_ind];
 }
-
 ////////////////////////////////////////////////////////////////////////////////////////
