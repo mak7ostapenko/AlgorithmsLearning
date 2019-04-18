@@ -76,6 +76,11 @@ void array_data_structure()
     cout << "but it has 7-th element = " << b2[5] << endl;
     cout << endl;
 
+    // Initialization of a multidimensional arrays
+    int multi_arr[][4][2] = {{{1, 2}, {3, 4},
+                              {23, 12}, {12, 12}}};
+    cout << "Size of multi dim array = " << sizeof(multi_arr) << endl << endl;
+
     // an array of 10 integers.  If arr[0] is stored at
     // address x, then arr[1] is stored at x + sizeof(int)
     // arr[2] is stored at x + sizeof(int) + sizeof(int)
