@@ -1,4 +1,8 @@
 # AlgorithmsLearning
+#### C++ Links
+##### STL Library
+- [Queue in STL](https://www.geeksforgeeks.org/queue-cpp-stl/)
+
 
 #### Links
 ##### Data structures

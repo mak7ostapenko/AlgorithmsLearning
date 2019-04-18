@@ -6,13 +6,9 @@ using std::endl;
 
 
 void array_data_structure();
-
-
-
 // Algorithms for computing n-th element of Fibonacci sequence
 int recursion_fib_num(int element_ind);
 int dynamic_fib_num(int element_ind);
-// Algorithms for computing
 
 
 int main()
@@ -46,16 +42,16 @@ int main()
             break;
         }
     }
-
     return 0;
 }
+
+
 
 ////////////////////////////////////////////////////////////////////////////////////////
 /*
  * DATA STRUCTURES
  */
 ////////////////////////////////////////////////////////////////////////////////////////
-
 
 /*
  * ARRAYS
@@ -72,14 +68,14 @@ void array_data_structure()
     int *e; // equal some think like that: 0x1cc687dERROR
 
     cout << "You have to remember that in C++ isn't error of out of bound array: " << endl;
-    cout << "Array b2 has size = " << sizeof(b2) << endl;
+    cout << "Array b2 has size = " << sizeof(b2) / sizeof(*b2) << endl;
     cout << "but it has 7-th element = " << b2[5] << endl;
     cout << endl;
 
     // Initialization of a multidimensional arrays
     int multi_arr[][4][2] = {{{1, 2}, {3, 4},
                               {23, 12}, {12, 12}}};
-    cout << "Size of multi dim array = " << sizeof(multi_arr) << endl << endl;
+    cout << "Size of multi dim array = " << sizeof(multi_arr) / sizeof(*multi_arr) << endl << endl;
 
     // an array of 10 integers.  If arr[0] is stored at
     // address x, then arr[1] is stored at x + sizeof(int)
@@ -96,7 +92,9 @@ void array_data_structure()
     }
 }
 
-
+/*
+ * QUEUE
+ */
 
 
 ////////////////////////////////////////////////////////////////////////////////////////
