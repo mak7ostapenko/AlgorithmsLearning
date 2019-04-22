@@ -1,5 +1,5 @@
 #include <iostream>
-#include "queue.h"
+#include "../../include/DataStructure/queue.h"
 
 using std::cout;
 using std::endl;
