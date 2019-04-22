@@ -1,4 +1,5 @@
 #include <iostream>
+#include "src/DataStructure/queue.h"
 
 using std::cout;
 using std::cin;
@@ -34,6 +35,27 @@ int main()
         case 2:
         {
             array_data_structure();
+            break;
+        }
+        case 3:
+        {
+            cout << "Work with queue" << endl;
+
+            Queue queue(5);
+
+            cout << "queue is empty? " << queue.isEmpty() << endl;
+            cout << "queue is full? " << queue.isFull() << endl;
+
+            queue.enqueue(3); // TODO: how declare param?
+            queue.enqueue(35);
+
+            cout << "from of queue = " << queue.get_front() << endl;
+            cout << "reare of queue = " << queue.get_rear() << endl;
+
+            cout << "dequeue operation " << queue.dequeue() << endl;
+
+            queue.~Queue();
+            cout << "Done" << endl;
             break;
         }
         default:
@@ -92,11 +114,6 @@ void array_data_structure()
     }
 }
 
-/*
- * QUEUE
- */
-
-
 ////////////////////////////////////////////////////////////////////////////////////////
 /*
  * BASIC ALGORITHMS
@@ -136,3 +153,15 @@ int dynamic_fib_num(int element_ind)
 
     return fib_sequence[element_ind];
 }
+
+
+////////////////////////////////////////////////////////////////////////////////////////
+/*
+ * C++ syntax
+ */
+////////////////////////////////////////////////////////////////////////////////////////
+
+/*
+ * Classes and objects
+ */
+
