@@ -11,10 +11,11 @@ private:
     int front, rear, size;
     unsigned int capacity;
     int *array;
+
 public:
     Queue(unsigned int capacity);
-    int isFull();
-    int isEmpty();
+    bool isFull();
+    bool isEmpty();
     void enqueue(int item);
     int dequeue();
     int get_front();

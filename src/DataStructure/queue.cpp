@@ -18,11 +18,11 @@ Queue::Queue(unsigned int capacity) {
     this->array = new int[(this->capacity * sizeof(int))];
 }
 
-int Queue::isEmpty() {
+bool Queue::isEmpty() {
     return this->size == 0;
 }
 
-int Queue::isFull() {
+bool Queue::isFull() {
     return this->size == this->capacity;
 }
 
