@@ -21,13 +21,11 @@ public:
     LinkedList();
     void add_node(int data);
     void display();
-
-    void insert_start(int data);
-    void insert_node(int data);
-
+    void insert_first(int data);
+    void insert_position(int position, int data);
+    void delete_first();
     void delete_last();
-    void delete_start();
-    void delete_node(int data);
+    void delete_position(int position);
     ~LinkedList();
 };
 
