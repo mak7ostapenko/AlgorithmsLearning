@@ -1,7 +1,3 @@
-//
-// Created by mak7 on 30.04.19.
-//
-
 #ifndef UNTITLED_LINKED_LIST_H
 #define UNTITLED_LINKED_LIST_H
 

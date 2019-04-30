@@ -40,7 +40,8 @@ void Stack::push(int item){
     }
     else
     {
-        this->array[++this->top] = item;
+        this->top++;
+        this->array[this->top] = item;
     }
 }
 
@@ -52,7 +53,7 @@ int Stack::pop() {
     }
     else
     {
-        return this->array[this->top++];
+        return this->array[this->top--];
     }
 }
 

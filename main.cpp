@@ -2,17 +2,16 @@
 
 #include "include/DataStructure/queue.h"
 #include "include/DataStructure/array.h"
+#include "include/DataStructure/stack.h"
+#include "include/DataStructure/linked_list.h"
 #include "include/DynamicProgramming/fibonacci.h"
 
 using std::cout;
 using std::cin;
 using std::endl;
 
+
 // TODO: for each case statement create test
-
-void array_data_structure();
-
-
 int main()
 {
     signed int alg_type;
@@ -57,6 +56,29 @@ int main()
 
             queue.~Queue();
             cout << "Done" << endl;
+            break;
+        }
+        case 4:
+        {
+            Stack stack(3);
+
+            cout << "stack is empty? " << stack.isEmpty() << endl;
+            cout << "stack is full? " << stack.isFull() << endl;
+
+            stack.push(30);
+            stack.push(35);
+
+            cout << "first element of stack = " << stack.pop() << endl;
+            cout << "first element of stack = " << stack.pop() << endl;
+            cout << "stack is full? " << stack.isFull() << endl;
+
+            stack.push(35);
+
+            cout << "first element of stack = " << stack.pop() << endl;
+
+            stack.~Stack();
+            cout << "Done" << endl;
+
             break;
         }
         default:
