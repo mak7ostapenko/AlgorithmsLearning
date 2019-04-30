@@ -81,6 +81,36 @@ int main()
 
             break;
         }
+        case 5:
+        {
+            LinkedList linked_list;
+
+            linked_list.add_node(1);
+            linked_list.add_node(2);
+            linked_list.add_node(4);
+            linked_list.display();
+            cout << endl;
+
+            linked_list.insert_first(0);
+            linked_list.add_node(5);
+            linked_list.display();
+            cout << endl;
+
+            linked_list.delete_first();
+            linked_list.delete_last();
+            linked_list.insert_position(2, 3);
+            linked_list.display();
+            cout << endl;
+
+            linked_list.delete_position(2);
+            linked_list.display();
+            cout << endl;
+
+            linked_list.~LinkedList();
+
+            cout << "Done" << endl;
+            break;
+        }
         default:
         {
             cout << "ERROR: Algorithm " << alg_type << " is not exist" << endl;

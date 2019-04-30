@@ -57,7 +57,7 @@ void LinkedList::insert_first(int data) {
 }
 
 void LinkedList::insert_position(int position, int data) {
-    if (position == this->length-1)
+    if (position == this->length)
     {
         this->add_node(data);
     }
@@ -75,7 +75,7 @@ void LinkedList::insert_position(int position, int data) {
         current = this->head;
 
         // TODO: move search in separate function
-        for(int i = 1; i < position; i++)
+        for(int i = 0; i < position; i++)
         {
             previous = current;
             current = current->next;
@@ -124,7 +124,7 @@ void LinkedList::delete_last() {
 }
 
 void LinkedList::delete_position(int position) {
-    if (position == this->length-1)
+    if (position == this->length)
     {
         this->delete_last();
     }
@@ -139,7 +139,7 @@ void LinkedList::delete_position(int position) {
 
         current = this->head;
 
-        for(int i = 1; i < position; i++)
+        for(int i = 0; i < position; i++)
         {
             previous = current;
             current = current->next;
