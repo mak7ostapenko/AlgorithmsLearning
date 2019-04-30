@@ -7,4 +7,4 @@ add_executable(untitled main.cpp src/DataStructure/queue.cpp include/DataStructu
                src/DynamicProgramming/fibonacci.cpp include/DynamicProgramming/fibonacci.h
                src/DataStructure/array.cpp include/DataStructure/array.h
                src/DataStructure/stack.cpp include/DataStructure/stack.h
-        )
+        src/DataStructure/linked_list.cpp include/DataStructure/linked_list.h)
