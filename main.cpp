@@ -10,6 +10,13 @@ using std::cout;
 using std::cin;
 using std::endl;
 
+// TODO: implement data structures:
+//  Heap
+//  Tree
+//  Hash Table
+
+// TODO: implement search algorithms...
+// TODO: write checkboxes in readme.md
 
 // TODO: for each case statement create test
 int main()
