@@ -1,0 +1,7 @@
+#ifndef UNTITLED_MIN_SPANNING_TREE_H
+#define UNTITLED_MIN_SPANNING_TREE_H
+
+#define V 5
+void primMST(int graph[V][V]);
+
+#endif //UNTITLED_MIN_SPANNING_TREE_H

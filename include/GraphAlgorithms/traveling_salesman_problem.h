@@ -1,0 +1,8 @@
+#ifndef UNTITLED_TRAVELING_SALESMAN_PROBLEM_H
+#define UNTITLED_TRAVELING_SALESMAN_PROBLEM_H
+
+#define V 4
+
+int travllingSalesmanProblem(int graph[][V], int s);
+
+#endif //UNTITLED_TRAVELING_SALESMAN_PROBLEM_H

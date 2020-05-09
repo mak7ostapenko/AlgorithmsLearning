@@ -1,0 +1,8 @@
+#ifndef UNTITLED_JOB_ASSIGNMENT_PROBLEM_H
+#define UNTITLED_JOB_ASSIGNMENT_PROBLEM_H
+
+#define N 4
+
+int findMinCost(int costMatrix[N][N]);
+
+#endif //UNTITLED_JOB_ASSIGNMENT_PROBLEM_H
